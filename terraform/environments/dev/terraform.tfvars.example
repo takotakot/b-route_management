@@ -1,0 +1,13 @@
+project_id = "your-project-id"
+
+# Optional variables (defaults shown)
+# region             = "asia-northeast1"
+# instant_topic_name = "instant_electric_power"
+# total_topic_name   = "total_electric_power"
+
+# Monitoring settings (enable_monitoring defaults to false)
+# enable_monitoring                = false
+# notification_email               = "your-email@example.com" # Required if enable_monitoring is set to true
+# additional_notification_channels = []
+# activate_scheduler = false
+# skip_build         = true
