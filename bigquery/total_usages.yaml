@@ -1,0 +1,9 @@
+- name: point_id
+  type: STRING
+  mode: REQUIRED
+- name: timestamp
+  type: TIMESTAMP
+  mode: REQUIRED
+- name: total_power_kwh
+  type: NUMERIC
+  mode: REQUIRED

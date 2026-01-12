@@ -1,0 +1,9 @@
+- name: point_id
+  type: STRING
+  mode: NULLABLE
+- name: total_power_kwh
+  type: NUMERIC
+  mode: NULLABLE
+- name: timestamp_jst
+  type: TIMESTAMP
+  mode: NULLABLE

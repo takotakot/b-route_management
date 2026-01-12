@@ -1,0 +1,14 @@
+typeKind: ARRAY
+arrayElementType:
+  typeKind: STRUCT
+  structType:
+    fields:
+      - name: point_id
+        type:
+          typeKind: STRING
+      - name: ts
+        type:
+          typeKind: TIMESTAMP
+      - name: instantaneous_power
+        type:
+          typeKind: INT64

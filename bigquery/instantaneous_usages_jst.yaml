@@ -1,0 +1,9 @@
+- name: point_id
+  type: STRING
+  mode: NULLABLE
+- name: instantaneous_power
+  type: INTEGER
+  mode: NULLABLE
+- name: timestamp_jst
+  type: TIMESTAMP
+  mode: NULLABLE
