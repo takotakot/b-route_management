@@ -1,6 +1,6 @@
 module github.com/takotakot/b-route_management/total2bq
 
-go 1.22.4
+go 1.25.5
 
 require (
 	cloud.google.com/go/bigquery v1.60.0
