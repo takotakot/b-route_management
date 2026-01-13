@@ -1,4 +1,4 @@
-package push_bq
+package total2bq
 
 import (
 	"context"
