@@ -1,7 +1,7 @@
 # 既存リソースを Terraform 管理下に置くためのインポートブロック
 # 利用する場合はコメントアウトを解除し、適宜 ID を実際の環境に合わせて調整する。
 
-# /*
+/*
 # --- BigQuery ---
 import {
   to = module.bigquery.google_bigquery_dataset.dataset
@@ -160,4 +160,4 @@ import {
   to = module.total2bq.google_eventarc_trigger.default
 }
 
-# */
+*/
