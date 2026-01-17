@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "gomod"
+    directory: "/instant2bq/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 30
+  - package-ecosystem: "gomod"
+    directory: "/total2bq/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 30
