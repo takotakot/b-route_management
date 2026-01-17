@@ -53,7 +53,7 @@ type InstantData struct {
 }
 
 func init() {
-	functions.HTTP("pubsub_to_bq", handler)
+	functions.HTTP("instant2bq", handler)
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
