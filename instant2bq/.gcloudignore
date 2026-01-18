@@ -17,5 +17,6 @@
 .go-version
 .env.yaml
 !*.go
+*_test.go
 !go.mod
 !go.sum

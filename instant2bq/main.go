@@ -44,6 +44,7 @@ var (
 	projectID         string
 	subscriptionID    string
 	JST               = time.FixedZone("Asia/Tokyo", JST_DIFF)
+	pullMsgsSyncFunc  = pullMsgsSync
 )
 
 type InstantData struct {
@@ -65,7 +66,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err := pullMsgsSync(w, projectID, subscriptionID)
+	err := pullMsgsSyncFunc(w, projectID, subscriptionID)
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Failed to pull messages: %v", err), http.StatusInternalServerError)
 		return
