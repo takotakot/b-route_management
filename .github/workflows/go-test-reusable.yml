@@ -1,0 +1,35 @@
+name: Go Test Reusable
+
+on:
+  workflow_call:
+    inputs:
+      module:
+        required: true
+        type: string
+
+jobs:
+  test:
+    name: Go Test (${{ inputs.module }})
+    runs-on: ubuntu-slim
+    strategy:
+      matrix:
+        go-version: [ '1.25.x' ]
+    defaults:
+      run:
+        working-directory: ${{ inputs.module }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go-version }}
+          cache-dependency-path: ${{ inputs.module }}/go.sum
+          cache: true
+
+      - name: Download modules
+        run: go mod download
+
+      - name: Test
+        run: go test -v ./...

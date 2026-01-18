@@ -1,0 +1,19 @@
+name: Go Test (instant2bq)
+
+on:
+  # push:
+  #   paths:
+  #     - "instant2bq/**"
+  #     - ".github/workflows/instant2bq.yml"
+  #     - ".github/workflows/go-test-reusable.yml"
+  pull_request:
+    paths:
+      - "instant2bq/**"
+      - ".github/workflows/instant2bq.yml"
+      - ".github/workflows/go-test-reusable.yml"
+
+jobs:
+  test-instant2bq:
+    uses: ./.github/workflows/go-test-reusable.yml
+    with:
+      module: instant2bq

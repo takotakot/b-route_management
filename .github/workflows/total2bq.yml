@@ -1,0 +1,19 @@
+name: Go Test (total2bq)
+
+on:
+  # push:
+  #   paths:
+  #     - "total2bq/**"
+  #     - ".github/workflows/total2bq.yml"
+  #     - ".github/workflows/go-test-reusable.yml"
+  pull_request:
+    paths:
+      - "total2bq/**"
+      - ".github/workflows/total2bq.yml"
+      - ".github/workflows/go-test-reusable.yml"
+
+jobs:
+  test-total2bq:
+    uses: ./.github/workflows/go-test-reusable.yml
+    with:
+      module: total2bq
