@@ -3,7 +3,7 @@ module github.com/takotakot/b-route_management/total2bq
 go 1.25.5
 
 require (
-	cloud.google.com/go/bigquery v1.82.0
+	cloud.google.com/go/bigquery v1.83.0
 	github.com/GoogleCloudPlatform/functions-framework-go v1.9.2
 )
 
