@@ -1,9 +1,9 @@
 module github.com/takotakot/b-route_management/instant2bq
 
-go 1.25.5
+go 1.26.0
 
 require (
-	cloud.google.com/go/bigquery v1.84.0
+	cloud.google.com/go/bigquery v1.85.0
 	cloud.google.com/go/pubsub v1.51.1
 	github.com/GoogleCloudPlatform/functions-framework-go v1.9.2
 	github.com/google/uuid v1.6.0
